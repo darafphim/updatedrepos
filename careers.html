@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#careers-page {
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		#careers-page.visible {
+			opacity: 1;
+		}
+	</style>
+	<script>
+		function showCareersPage() {
+			var careersPage = document.getElementById('careers-page');
+			careersPage.classList.add('visible');
+			setTimeout(showWebpage, 50);
+		}
+
+		function showWebpage() {
+			document.body.style.opacity = '1';
+		}
+	</script>
+</head>
+<body id="careers-page" class="careers-bg">
+	<div class="container">
+		<div class="header">
+			<img src="solog.png" class="logo">
+			<h1 class="website-name">TECH<span class="path">PATH</span></h1>
+			<h2 class="tag-line">We <span class="lighten">lighten</span> your ways</h2>
+			<div class="navbar">
+				<a href="about.html">ABOUT</a>
+				<a href="courses.html">COURSES</a>
+				<a href="careers.html"class="active">CAREERS</a>
+				<a href="applications.html">APPLICATIONS</a>
+				<a href="contacts.html">CONTACTS</a>
+			</div>
+		</div>
+		<div class="careers-title">PROFESSION AND THEIR DESCRIPTIONS</div>
+		<div class="subtitle"></div>
+	</div>
+			
+		<img src="webd.png" class="careers1-image">
+		
+			<div class="careers1-text-container">
+			<p class="careers1-text"> WEB DEVELOPER</p>
+			</div>
+			
+			<div class="doscareers-text-container">
+			<p class "doscareers-text"> A web developer is in charge of planning, constructing, and updating websites. They collaborate with clients to comprehend their goals and create websites that
+			satisfy those needs. A web developer should be knowledgeable about common web development frameworks like React and Angular as well as web development technologies like HTML, CSS, and 
+			JavaScript.<br /><br />A degree in computer science, information technology, or a similar discipline is often required of web developers. However, a lot of web developers are self-taught
+			and have developed their knowledge via tutorials, internet resources, and real-world experience. A web developer should have excellent analytical and problem-solving abilities in addition
+			to technical expertise. They should also be able to work both independently and collaboratively.<br />
+			</p>
+			</div>
+			
+		<img src="game.png" class="careers2-image">
+		
+			<div class="careers2-text-container">
+			<p class="careers2-text"> GAME DEVELOPER</p>
+			</div>
+			
+			<div class="trescareers-text-container">
+			<p class "trescareers-text">Professionals who design and produce video games for a variety of platforms, including consoles, PCs, and mobile devices, are known as game developers. 
+			By writing and coding game mechanics, graphics, and sound, they collaborate closely with game designers and artists to realize their ambitions. Video game code must be written and 
+			tested by game developers, who need to be skilled programmers.  To make interesting and entertaining games, they must also be able to work with game engines and development tools.
+			<br /><br />A bachelor's degree in computer science, software engineering, or a closely related subject is required to work as a game developer. Additionally, employers might need prior 
+			expertise in software engineering, programming, or game development. Strong knowledge of programming languages such as C++, Java, and Python is also essential for the job.
+			</p>
+			</div>
+		
+		<img src="eng.png" class="careers3-image">
+		
+			<div class="careers3-text-container">
+			<p class="careers3-text">SOFTWARE ENGINEER</p>
+			</div>
+			
+			<div class="quatcareers-text-container">
+			<p class "quat-text"> Software engineers are in charge of organizing, developing, testing, and maintaining software applications. They develop efficient and effective strategies for 
+			businesses and organizations using programming languages and software development tools. To make sure that software projects are finished on time frame and according to the client's 
+			requirements, software engineers closely collaborate with other experts like programmers, project managers, and quality assurance specialists.<br /><br />A bachelor's degree in software
+			engineering, computer science, or a closely related subject is often required to work as a software engineer. Strong programming abilities in languages like Java, Python, and C++ are 
+			required, as well as familiarity with software development platforms like Git, Jenkins, and JIRA.<br />
+			</p>
+			</div>
+		
+		<img src="soft.png" class="careers4-image">
+		
+			<div class="careers4-text-container">
+			<p class="careers4-text">SOFTWARE DEVELOPER</p>
+			</div>
+			
+			<div class="sincocareers-text-container">
+			<p class "sinco-text">Software developers are responsible for creating and maintaining software systems to meet user needs, using programming languages such as Java, Python, and C++. 
+			They work across various industries, including healthcare, finance, and entertainment. To become a software developer, one must have a degree in computer science, software engineering, 
+			or a related field and knowledge of programming languages and software development methodologies. Familiarity with front-end and back-end technologies and databases is also necessary.
+			<br /><br />In order to recognize and fix errors in software, software developers also need to have useful analytical and problem-solving abilities. They must also be able to work under 
+			pressure and manage numerous projects at once. To keep up with the most recent technological breakthroughs and advancements, ongoing study is also critical.
+			</p>
+			</div>
+			
+		<img src="market.png" class="careers5-image">
+		
+			<div class="careers5-text-container">
+			<p class="careers5-text" id="digar">DIGITAL MARKETING SPECIALIST</p>
+			</div>
+			
+			<div class="saiscareers-text-container">
+			<p class "sais-text">Specialists referred to as "digital marketing specialists" are in charge of creating, implementing, and overseeing the web marketing campaigns that advertise a company's
+			goods or services. To connect and engage their target audience, they employ a variety of digital marketing tools and strategies, including social media, email marketing, search engine 
+			optimization (SEO), pay-per-click (PPC) advertising, and content advertising.
+			<br /><br />A bachelor's degree in marketing, communications, or another closely associated field is frequently required for positions as digital marketing expert. They should be very skilled in communication, analysis, and creativity, and have experience using a variety of digital marketing tools, channels, and approaches. Specialists in digital marketing should be able to evaluate data and metrics to assess the success of campaigns and modify plans as necessary.</p>
+			</div>
+			
+			
+	<script>
+		window.addEventListener("DOMContentLoaded", function(event) {
+			setTimeout(showCareersPage, 50); 
+		});
+	</script>
+</body>
+</html>

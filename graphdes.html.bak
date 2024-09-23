@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#courses-page {
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		#courses-page.visible {
+			opacity: 1;
+		}
+		.clickable {
+			cursor: pointer;
+			color: white;
+			text-decoration: blink;
+		}
+		
+	</style>
+</head>
+<body id="courses page" class="courses-bg">
+	<div class="container">
+		<div class="header">
+			<img src="solog.png" class="logo">
+			<h1 class="website-name">TECH<span class="path">PATH</span></h1>
+			<h2 class="tag-line">We <span class="lighten">lighten</span> your ways</h2>
+		</div>
+		
+		<script>
+		if (localStorage.getItem("visited")) {
+			document.querySelector('.loader-wrapper').style.display = 'none';
+		} else {
+			setTimeout(function() {
+				document.querySelector('.loader-wrapper').style.opacity = '0';
+				setTimeout(function() {
+					document.querySelector('.loader-wrapper').style.display = 'none';
+					localStorage.setItem("visited", "true");
+				}, 1000);
+			}, 300);
+		}
+	</script>
+</body>
+</html>

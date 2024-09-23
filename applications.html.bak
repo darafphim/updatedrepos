@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#applications-page {
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		#applications-page visible {
+			opacity: 1;
+		}
+	</style>
+	<script>
+		function showApplicationsPage() {
+			var applicationsPage = document.getElementById('applications-page');
+			applicationsPage.classList.add('visible');
+			setTimeout(showWebpage, 1000);
+		}
+
+		function showWebpage() {
+			document.body.style.opacity = '1';
+		}
+	</script>
+			
+</head>
+<body id="applications-page" class="application-bg">
+	<div class="container">
+		<div class="header">
+			<img src="solog.png" class="logo">
+			<h1 class="website-name">TECH<span class="path">PATH</span></h1>
+			<h2 class="tag-line">We <span class="lighten">lighten</span> your ways</h2>
+			<div class="navbar">
+				<a href="about.html">ABOUT</a>
+				<a href="courses.html">COURSES</a>
+				<a href="careers.html">CAREERS</a>
+				<a href="applications.html"class="active">APPLICATIONS</a>
+				<a href="contacts.html">CONTACTS</a>
+			</div>
+		</div>
+		<div class="apptitle">HOW AND WHERE CAN YOU APPLY YOUR SKILLS?</div>
+		<div class="appsub">There are several ways to apply your technology skills outside of work and school. You can contribute to open-source projects, where developers worldwide collaborate on 
+		publicly available software projects to gain experience, learn new skills, and build a website. Freelancing offers another opportunity to work on short-term projects for clients on a contract
+		basis, such as web and mobile app development or digital marketing.<br /><br />You can also volunteer your technology skills for non-profit organizations, using them to help build websites, create social
+		media campaigns, and manage data. Finally, starting your own technology-related project is an option, allowing you to work on something you're passionate about and set your own goals while 
+		building your portfolio.</div> 
+	</div>
+		
+			<div class="appcareers-text-container">
+			<img src="artif.png" class="first-image"
+			</div>
+			
+			<div class="app-text-container">
+			<p class="app-text">ARTIFICIAL INTELLIGENCE</p
+			</div>
+			
+			<p class="app0-text">Artificial Intelligence (AI) is a branch of computer science that focuses on the creation of intelligent machines that can perform tasks that usually require 
+			human intelligence, such as learning, problem-solving, and decision making. AI involves the development of algorithms, computer programs, and systems that can process data, recognize 
+			patterns, and learn from experience. The applications of AI are vast and include natural language processing, image and speech recognition, robotics, autonomous vehicles, fraud detection, 
+			recommendation systems, and personalized marketing. AI has the potential to revolutionize industries such as healthcare, finance, transportation, and manufacturing, by making processes 
+			more efficient, reducing costs, and improving decision-making.</p>
+			
+			<div class="appcareers1-text-container">
+			<img src="char.png" class="first-image"
+			</div>
+			
+			<div class="app1-text-container">
+			<p class="appp-text">CHARACTER MODELING</p
+			</div>
+			
+			<p class="app1-text">Character modeling is the process of developing 3D models of characters for use in a variety of fields, including animation, film, and video games. The physical 
+			characteristics of a character, such as their shape, texture, and color, are represented digitally using specialized software. Character modeling is a technique used in the video game 
+			business to develop playable characters. Character modeling is a technique used in animation and film to give figures life and produce realistic animations.  Specialized artists with 
+			training in traditional art and 3D modeling software frequently carry out this work.</p>
+			
+			<div class="appcareers2-text-container">
+			<img src="vol.png" class="first-image"
+			</div>
+			
+			<div class="app2-text-container">
+			<p class="apppp-text">VOLUNTEER WORK</p
+			</div>
+			
+			<p class="app2-text">Volunteering involves lending a hand with projects or chores involving technology for organizations, communities, or individuals. These initiatives can include 
+			creating websites or software programs, offering technical support, or imparting technology knowledge to others. Volunteering in the field of technology can have a big impact on society. 
+			For instance, technology volunteers can assist nonprofit organizations with the development of social media campaigns, databases, and website creation and maintenance. Additionally, 
+			they can collaborate with educational institutions or community organizations to train marginalized populations in technical skills so they are successful in the digital age.</p>
+			
+			<div class="appcareers3-text-container">
+			<img src="open.png" class="first-image"
+			</div>
+			
+			<div class="app3-text-container">
+			<p class="appppp-text">OPEN-SOURCE PROJECTS</p
+			</div>
+			
+			<p class="app3-text">Open source projects have numerous and various applications. To create websites, mobile applications, and desktop programs, many businesses, groups, and people use
+			open source software. Open source initiatives have emerged as a crucial component of the technological ecosystem, powering everything from operating systems and machine learning frameworks
+			to web browsers and database management systems. Developers can develop new skills, expand their portfolios, and work with other developers from across the world by contributing to open 
+			source projects. Additionally, open source projects allow developers the chance to give back to the community by applying their knowledge and experience to initiatives that help others.</p>
+			
+			<div class="appcareers4-text-container">
+			<img src="fifth.png" class="first-image"
+			</div>
+			
+			<div class="app4-text-container">
+			<p class="apppppp-text">HACKATHONS</p
+			</div>
+			
+			<p class="app4-text">Hackathons give participants an opportunity to work with others who share their interests, pick up new skills, and maybe receive rewards or get employment. 
+			Hackathons can also generate original solutions to difficult challenges and serve as a venue for networking and professional growth. Hackathons are occasions where individuals 
+			gather to work together on technology projects in a condensed period of time, usually lasting from 24 to 48 hours. A hackathon's objective is to create a working prototype or fix 
+			for a particular issue. Hackathon participants can have a variety of backgrounds, such as those in software development, design, marketing, and business.</p>
+			
+			<div class="appcareers5-text-container">
+			<img src="last.png" class="first-image"
+			</div>
+			
+			<div class="app5-text-container">
+			<p class="appppppp-text">FREELANCING</p
+			</div>
+			
+			<p class="app5-text">Working on temporary assignments for clients under a contract is referred to as freelancing. It's a versatile and well-liked way to use your technological expertise.
+			There are many fields where freelance employment is available, such as web development, mobile app development, and digital marketing. You can select your own clients, set your own hours,
+			and create a portfolio of work as a freelancer. Freelancing can be a fantastic method to advance your profession, build an audience, and get experience. Freelancing is used in many 
+			different areas, including technology. Freelancers have the flexibility to work remotely, giving businesses access to an internation staffwithout worrying about boundaries imposed by 
+			location.</p>
+	<script>
+		window.addEventListener("DOMContentLoaded", function(event) {
+			setTimeout(showApplicationsPage, 50); 
+		});
+	</script>
+</body>
+</html>

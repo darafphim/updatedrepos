@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#contacts-page {
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		#contacts-page.visible {
+			opacity: 1;
+		}
+	</style>
+	<script>
+		function showContactsPage() {
+			var contactsPage = document.getElementById('contacts-page');
+			contactsPage.classList.add('visible');
+		}
+	</script>
+</head>
+<body id="contacts-page" class="contacts-bg">
+	<div class="container">
+		<div class="header">
+			<img src="solog.png" class="logo">
+			<h1 class="website-name">TECH<span class="path">PATH</span></h1>
+			<h2 class="tag-line">We <span class="lighten">lighten</span> your ways</h2>
+			<div class="navbar">
+				<a href="about.html">ABOUT</a>
+				<a href="courses.html">COURSES</a>
+				<a href="careers.html">CAREERS</a>
+				<a href="applications.html">APPLICATIONS</a>
+				<a href="contacts.html" class="active">CONTACTS</a>
+			</div>
+		</div>
+		<div class="title"></div>
+		<div class="subtitle"></div>
+	</div>
+
+	<div class="contacts-text-container">
+		<img src="1.png" class="first">
+	</div>
+
+	<div class="ye-image-container">
+		<img src="11.png" class="fourth">
+	</div>
+
+	<div class="contacts1-text-container">
+		<img src="2.png" class="second">
+	</div>
+
+	<div class="ye-image-container">
+		<img src="22.png" class="fifth">
+	</div>
+
+	<script>
+		window.addEventListener("DOMContentLoaded", function(event) {
+			setTimeout(showContactsPage, 100); 
+		});
+	</script>
+</body>
+</html>

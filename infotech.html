@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#courses-page {
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		#courses-page.visible {
+			opacity: 1;
+		}
+		.clickable {
+			cursor: pointer;
+			color: white;
+			text-decoration: blink;
+		}
+		
+	</style>
+</head>
+<body id="infotech" class="infotech-bg">
+	<div class="container">
+		<div class="header">
+		</div>
+		<img class="comsci-one" src="IT.png">
+		<h1 class="scioverview">OVERVIEW<h1>
+		<p class="scitext">The implementation of technology to manage and process data is the focus of the area of Information Technology (IT). Computer-based information systems' design, 
+		development, installation, and management are all incorporated. IT specialists work in a range of sectors, from financial services to healthcare, to increase productivity and efficiency 
+		by utilizing technology.<br /><br />IT is frequently given in academic programs as an areas of expertise within a wider computer science or business major. Typically, students majoring in 
+		IT develop a wide range of abilities, including project management, networking, programming, database management, and cybersecurity. Additionally, they will gain knowledge about how technology
+		may assist corporate operations and be used to address real-world issues.</p>
+		<h1 class="scireq">REQUIREMENTS<h1>
+		<p class="scirtext">To pursue a college course in Information Technology in the Philippines, students need to satisfy specific requirements that may vary based on the school or university. 
+		One of the fundamental prerequisites is the completion of high school education or its equivalent, which is a high school diploma. Additionally, some schools may require students to take a 
+		college entrance exam, which evaluates their knowledge, aptitude, and readiness for higher education.<br /><br />Apart from these general requirements, specific schools or programs may have 
+		additional prerequisites. For instance, certain institutions may require students to have a minimum grade point average (GPA) to be considered for admission. Moreover, some schools may require
+		applicants to have completed specific subjects in high school, such as mathematics, science, and computer-related courses, to be eligible for an IT course. Furthermore, transcripts are an 
+		essential part of the admission process, and most schools will consider a student's academic performance and achievements in high school. Therefore, students may need to provide their academic
+		records, including grades, awards, and other relevant information to be evaluated for admission.</p>
+		
+		<h1 class="majornsh">MAJOR SUBJECTS<h1>
+		<li class="majornsh1">Introduction to Programming</li>
+		<li class="majornsh2">Database Management Systems</li>	
+		<li class="majornsh3">Network Administration</li>	
+		<li class="majornsh4">Web Developments</li>	
+		<li class="majornsh5">Information Security and Privacy</li>
+		
+		<h1 class="majornshh">RECOMMENDED INSTITUTIONS
+		<li class="majornsh6">Lyceum of the Philippines University (LPU)</li>
+		<li class="majornsh7">Mapua University</li>	
+		<li class="majornsh8">Far Eastern University (FEU))</li>	
+		<li class="majornsh9">Centro Escolar University (CEU)</li>	
+		<li class="majornsh10">Emilio Aguinaldo College (EAC)</li>
+		
+		<script>
+		if (localStorage.getItem("visited")) {
+			document.querySelector('.loader-wrapper').style.display = 'none';
+		} else {
+			setTimeout(function() {
+				document.querySelector('.loader-wrapper').style.opacity = '0';
+				setTimeout(function() {
+					document.querySelector('.loader-wrapper').style.display = 'none';
+					localStorage.setItem("visited", "true");
+				}, 1000);
+			}, 300);
+		}
+	</script>
+</body>
+</html>

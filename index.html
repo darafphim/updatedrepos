@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<div class="loader-wrapper">
+		<div class="loader">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</div>
+	<body class="home-bg">
+	<div class="container">
+		<div class="header">
+			<img src="solog.png" class="logo">
+			<h1 class="website-name">TECH<span class="path">PATH</span></h1>
+			<h2 class="tag-line">We <span class="lighten">lighten</span> your ways</h2>
+			<div class="navbar">
+				<a href="about.html">ABOUT</a>
+				<a href="courses.html">COURSES</a>
+				<a href="careers.html">CAREERS</a>
+				<a href="applications.html">APPLICATIONS</a>
+				<a href="contacts.html">CONTACTS</a>
+			</div>
+		</div>
+	</div>
+			<img class="middle" src="middle.png">
+	<script>
+		setTimeout(function() {
+			document.querySelector('.loader-wrapper').style.opacity = '0';
+			setTimeout(function() {
+				document.querySelector('.loader-wrapper').style.display = 'none';
+			}, 1000);
+		}, 5000);
+	</script>
+</body>
+</html>

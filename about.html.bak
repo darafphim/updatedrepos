@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#about-page {
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		#about-page.visible {
+			opacity: 1;
+		}
+	</style>
+	<script>
+		function showAboutPage() {
+			var aboutPage = document.getElementById('about-page');
+			aboutPage.classList.add('visible');
+			setTimeout(showWebpage, 50);
+		}
+
+		function showWebpage() {
+			document.body.style.opacity = '1';
+		}
+	</script>
+</head>
+<body id="about-page" class="about-bg">
+	<div class="container">
+		<div class="header">
+			<img src="solog.png" class="logo">
+			<h1 class="website-name">TECH<span class="path">PATH</span></h1>
+			<h2 class="tag-line">We <span class="lighten">lighten</span> your ways</h2>
+			<div class="navbar">
+				<a href="about.html" class="active active-page">ABOUT</a>
+				<a href="courses.html">COURSES</a>
+				<a href="careers.html">CAREERS</a>
+				<a href="applications.html">APPLICATIONS</a>
+				<a href="contacts.html">CONTACTS</a>
+			</div>
+		</div>
+		<div class="about-page">
+			<div class="titleabout">INTRODUCTION</div>
+			<div class="imageone-container">
+			<img class="img-one" src="port.png">
+			</div>
+			<p></br />Welcome to TechPath, a website dedicated to providing insightful information and guidance on the world of technology and digital programming. 
+			We understand that navigating the vast and complex field of technology can be overwhelming, especially for individuals who are just starting out. 
+			That's why we are here to help you choose the right path that aligns with your goals and objectives.
+			<p><br />Whether you're interested in web development, software engineering, or animation, TechPath offers a wealth of resources and tools to help you explore 
+			different career paths and discover what best suits your interests and skill sets. Our team of experts is passionate about technology and digital programming 
+			and is committed to sharing their knowledge and experience to help individuals thrive in this rapidly evolving field.</p>
+			<p><br />At TechPath, we believe that technology has the power to transform lives and create new opportunities. Our mission is to empower individuals to pursue their
+			dreams and achieve success in the digital age. So, whether you're a seasoned professional or just starting out, we invite you to explore our website and discover the 
+			endless possibilities that await you in the <br />world of technology.</p>
+			<div class="missionone">MISSION</div>
+			<p><br />Navigating the world of technology and digital programming can be challenging, particularly for individuals who are just starting out. At TechPath, we understand 
+			the obstacles that come with pursuing a career in technology, and we're here to provide the guidance and support that individuals need to overcome these challenges.<br /></p>
+			<p><br />Our team of experienced professionals is passionate about technology and digital programming, and we're committed to sharing our expertise and knowledge with individuals 
+			who are eager to learn. We believe that with the right guidance, individuals can overcome the obstacles that come with pursuing a career in technology and achieve success in this 
+			rapidly evolving field.<br /></p>
+			<div class="visionone">VISION<div>
+			<p><br />At TechPath, our vision is to create a world where technology is a catalyst for positive change and innovation. We believe that technology has the power to shape the future and
+			create new possibilities for individuals and society as a whole.</p>
+			<p><br />Our goal is to empower individuals to explore the limitless potential of technology and digital programming, and to inspire them to use their skills and knowledge to make 
+			a meaningful impact on the world. We believe that everyone has the ability to make a difference, and we're committed to providing individuals with the guidance, tools, and resources 
+			they need to realize their full potential.</p>
+			<p><br />We envision a future where individuals from diverse backgrounds and experiences can come together to innovate, collaborate, and solve some of the world's most pressing challenges
+			using technology. Our vision is to create a community of individuals who are passionate about technology and committed to making a positive impact on the world.</p>
+		</div>
+	</div>
+	<script>
+		window.addEventListener("DOMContentLoaded", function(event) {
+			setTimeout(showAboutPage, 50); 
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#courses-page {
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		#courses-page.visible {
+			opacity: 1;
+		}
+		.clickable {
+			cursor: pointer;
+			color: white;
+			text-decoration: blink;
+		}
+		
+	</style>
+</head>
+<body id="entertain" class="entertain-bg">
+	<div class="container">
+		<div class="header">
+			<img src="solog.png" class="logo">
+			<h1 class="website-name">TECH<span class="path">PATH</span></h1>
+			<h2 class="tag-line">We <span class="lighten">lighten</span> your ways</h2>
+		</div>
+		
+		<img class="comsci-one" src="enter.png">
+		<h1 class="scioverview">OVERVIEW<h1>
+		<p class="scitext">The study of entertainment and media technology is associated with the development, production, and distribution of media material through a variety of platforms, such as 
+		video games, social media, music, and television. This industry integrates elements of computer science, art, design, and business to create compelling and interactive media experiences.
+		<br /><br />Students who major in Entertainment and Media Technology will learn about a variety of media-related topics, such as media production, animation, digital imaging, sound engineering, and post-production. Additionally, they will learn how to tell stories, create content, manage projects, and be entrepreneurs. Because students are frequently required to complete projects that mirror real-world industrial circumstances, this curriculum places a strong emphasis on experiential learning and the practical application of abilities.</p>
+		<h1 class="scireq">REQUIREMENTS<h1>
+		<p class="scirtext">Certain institutions can have extra requirements for the Entertainment and Media Technology course in addition to these baseline qualifications. For instance, some 
+		institutions could ask applicants to submit a portfolio demonstrating their artistic endeavors or work on multimedia or entertainment-related projects. A minimum grade point average (GPA) 
+		or a list of specified high school courses may also be required by some universities.<br /><br />Additionally, some schools could demand an audition or interview procedure to gauge the 
+		applicant's enthusiasm and interest in the field. The precise admission requirements of the college or university where you wish to apply should be verified, as each school has its own 
+		distinctive collection of standards.</p>
+			
+		<h1 class="majornsh">MAJOR SUBJECTS<h1>
+		<li class="majornsh1">Introduction to Media and Entertainment Technology</li>
+		<li class="majornsh2">Scriptwriting and Storyboarding</li>	
+		<li class="majornsh3">Audio Production and Recording</li>	
+		<li class="majornsh4">Video Production and Editing</li>	
+		<li class="majornsh5">Digital Media Design and Animation</li>
+		
+		<h1 class="majornshh">RECOMMENDED INSTITUTIONS
+		<li class="majornsh6">Our Lady of Fatima University (OLFU)</li>
+		<li class="majornsh7">Malayan Colleges Mindanao (MCM)</li>	
+		<li class="majornsh8">Jose Rizal University (JRU)</li>	
+		<li class="majornsh9">Lyceum of the Philippines University</li>	
+		<li class="majornsh10">University of the Philippines - Diliman</li>
+		
+		<script>
+		if (localStorage.getItem("visited")) {
+			document.querySelector('.loader-wrapper').style.display = 'none';
+		} else {
+			setTimeout(function() {
+				document.querySelector('.loader-wrapper').style.opacity = '0';
+				setTimeout(function() {
+					document.querySelector('.loader-wrapper').style.display = 'none';
+					localStorage.setItem("visited", "true");
+				}, 1000);
+			}, 300);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#courses-page {
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		#courses-page.visible {
+			opacity: 1;
+		}
+		.clickable {
+			cursor: pointer;
+			color: white;
+			text-decoration: blink;
+		}
+		
+	</style>
+	<script>
+		function showCoursesPage() {
+			var coursesPage = document.getElementById('courses-page');
+			coursesPage.classList.add('visible');
+			setTimeout(showWebpage, 50);
+		}
+
+		function showWebpage() {
+			document.body.style.opacity = '1';
+		}
+	</script>
+</head>
+<body id="courses-page" class="courses-bg">
+	<div class="container">
+		<div class="header">
+			<img src="solog.png" class="logo">
+			<h1 class="website-name">TECH<span class="path">PATH</span></h1>
+			<h2 class="tag-line">We <span class="lighten">lighten</span> your ways</h2>
+			<div class="navbar">
+				<a href="about.html">ABOUT</a>
+				<a href="courses.html"class="active">COURSES</a>
+				<a href="careers.html">CAREERS</a>
+				<a href="applications.html">APPLICATIONS</a>
+				<a href="contacts.html">CONTACTS</a>
+			</div>
+		</div>
+		
+		<div class="titleabout">WHAT TO EXPECT?</div>
+		<div class="courses-page">
+		<div class="expectone"></div>
+			<img class="img-two" src="course.png">
+			<p>TechPath's Courses Page offers a variety of options related to ICT and IT, with full course descriptions, major topics covered, prerequisites, and a list of recommended schools.
+			From beginner to advanced courses, the page is carefully curated to cater to different interests and skill levels, providing all the necessary information to make an informed decision 
+			about your education in the ever-evolving field of technology.</p>
+			</div>
+		</div>
+		
+		<div class="parent-container">
+			<div class="imgcone-container">
+				<img src="comsci.png" alt="Image 1" class="imgco-one">
+				<p><a href="comsci.html" target="_blank" class="clickable1">Computer Science</a></p>
+			</div>
+			<div class="imgctwo-container">
+				<img src="compeng.png" alt="Image 2" class="imgco-two">
+				<p><a href="compeng.html" target="_blank" class="clickable2">Computer Engineering</a></p>
+			</div>
+			<div class="imgcthree-container">
+				<img src="infote.png" alt="Image 3" class="imgco-three">
+				<p><a href="infotech.html" target="_blank" class="clickable3">Information Technology</a></p>
+			</div>
+			<div class="imgcfour-container">
+				<img src="infosys.png" alt="Image 4" class="imgco-four">
+				<p><a href="compnet.html" target="_blank" class="clickable4">Computer Networking</a></p>
+			<div class="imgcfive-container">
+				<img src="datasci.png" alt="Image 5" class="imgco-five">
+				<p><a href="datascience.html" target="_blank" class="clickable5">Data Science</a></p>
+			<div class="imgcsix-container">
+				<img src="entertain.png" alt="Image 6" class="imgco-six">
+				<p><a href="entertain.html" target="_blank" class="clickable6">Entertainment Computing</a></p>
+				
+			</div>
+			
+		
+		
+	<script>
+		window.addEventListener("DOMContentLoaded", function(event) {
+			setTimeout(showCoursesPage, 50); 
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

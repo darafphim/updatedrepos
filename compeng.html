@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		#courses-page {
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+		}
+		#courses-page.visible {
+			opacity: 1;
+		}
+		.clickable {
+			cursor: pointer;
+			color: white;
+			text-decoration: blink;
+		}
+		
+	</style>
+</head>
+<body id="compeng" class="compeng-bg">
+	<div class="container">
+		<div class="header">
+		</div>
+		
+		<img class="comsci-one" src="engine.png">
+		<h1 class="scioverview">OVERVIEW<h1>
+		<p class="scitext">Computer engineering is a study that combines concepts from mechanical engineering with computer science in order to create and maintain systems for computers,
+		including their hardware and software components. Computer engineers strive to integrate computer technology into a variety of gadgets and systems, from lightweight electronics like
+		smartphones and laptops to intricate machines like cars and industrial machinery.<br /><br />Computer engineering is a study that combines concepts from mechanical engineering with computer 
+		science in order to create and maintain systems for computers, including their hardware and software components. Computer engineers strive to integrate computer technology into a variety 
+		of gadgets and systems, from lightweight electronics like smartphones and laptops to intricate machines like cars and industrial machinery.</p>
+		<h1 class="scireq">REQUIREMENTS<h1>
+		<p class="scirtext">Computer Engineering are merged in the five-year Bachelor of Science in Computer Engineering (BS CpE) curriculum. Students receive a foundation in engineering, 
+		computer science, mathematics, and basic science through the program. A bachelor's degree in the field is required to work as a computer engineer. Additionally, students take courses in 
+		arithmetic, physics, and computer science.<br /><br />Information and Communication Technology (ICT) strand is recommended for students who want to major in computer engineering. 
+		The strand gives students a fundamental knowledge of computer programming, technical drafting, animation, web design, and illustration. Students who complete the degree will also be able 
+		to evaluate, plan, develop, install, operate, and maintain computer hardware and software systems.</p>
+		
+		<h1 class="majornsh">MAJOR SUBJECTS<h1>
+		<li class="majornsh1">Calculus and Differential Equations</li>
+		<li class="majornsh2">Physics and Chemistry for Engineers</li>	
+		<li class="majornsh3">Software Engineering</li>	
+		<li class="majornsh4">Data Structures and Algorithms</li>	
+		<li class="majornsh5">Computer Organization and Architecture</li>
+		
+		<h1 class="majornshh">RECOMMENDED INSTITUTIONS
+		<li class="majornsh6">Our Lady of Fatima University (OLFU)</li>
+		<li class="majornsh7">Mapua University</li>	
+		<li class="majornsh8">FEU Institute of Technology (Feu Tech)</li>	
+		<li class="majornsh9">Adamson University (AdU)</li>	
+		<li class="majornsh10">Malayan College Laguna (MCL)</li>
+		
+		<script>
+		if (localStorage.getItem("visited")) {
+			document.querySelector('.loader-wrapper').style.display = 'none';
+		} else {
+			setTimeout(function() {
+				document.querySelector('.loader-wrapper').style.opacity = '0';
+				setTimeout(function() {
+					document.querySelector('.loader-wrapper').style.display = 'none';
+					localStorage.setItem("visited", "true");
+				}, 1000);
+			}, 300);
+		}
+	</script>
+</body>
+</html>

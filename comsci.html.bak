@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechPath</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="comsci-page" class="comsci-bg">
+	<div class="container">
+		<div class="header">
+			<img src="" class="logo">
+		</div>
+		
+		<img class="comsci-one" src="comsci1.png">
+		<h1 class="scioverview">OVERVIEW<h1>
+		<p class="scitext">The study of computers and computing technology is the focus of computer science, a large and diverse field. It includes both theoretical and practical aspects of computer 
+		hardware and software design, development, and use. Algorithms, programming languages, databases, networks, operating systems, computer architecture, artificial intelligence, and other subjects
+		fall under the purview of computer science.<br /><br />Students who pursue a degree in computer science are given a solid foundation in programming and problem-solving techniques. 
+		Additionally, students will have a thorough understanding of important theories and concepts in computing and IT, including data structures, algorithms, software engineering, and cybersecurity.
+		These abilities are essential for creating software solutions and satisfying the complex requirements of the sector.</p>
+		<h1 class="scireq">REQUIREMENTS<h1>
+		<p class="scirtext">Depending on the educational setting and degree of study, there may be differences in the specific prerequisites to enroll in a computer science course. 
+		A high school diploma or a comparable qualification, together with a strong basis in mathematics and computer science education, may be one or more general requirements. In addition to an 
+		acceptable grade point average, certain universities may additionally demand standardized test results.<br /><br />Some colleges may evaluate applicants based on extracurricular activities and 
+		appropriate work experience in addition to academic criteria. Prior to submitting an application, it's crucial to investigate the precise demands of the college or university you're considering
+		and make sure you complete them adequately.</p>
+		
+		<h1 class="majornsh">MAJOR SUBJECTS<h1>
+		<li class="majornsh1">Programming Languages</li>
+		<li class="majornsh2">Data Structure and Algorithms</li>	
+		<li class="majornsh3">Operating Systems</li>	
+		<li class="majornsh4">Software Engineering</li>	
+		<li class="majornsh5">Computer Networks</li>
+		
+		<h1 class="majornshh">RECOMMENDED INSTITUTIONS
+		<li class="majornsh6">Our Lady of Fatima University (OLFU)</li>
+		<li class="majornsh7">Mapua University</li>	
+		<li class="majornsh8">FEU Institute of Technology (Feu Tech)</li>	
+		<li class="majornsh9">Adamson University (AdU)</li>	
+		<li class="majornsh10">Malayan College Laguna (MCL)</li>
+		
+		
+		
+
+		
+		<script>
+		if (localStorage.getItem("visited")) {
+			document.querySelector('.loader-wrapper').style.display = 'none';
+		} else {
+			setTimeout(function() {
+				document.querySelector('.loader-wrapper').style.opacity = '0';
+				setTimeout(function() {
+					document.querySelector('.loader-wrapper').style.display = 'none';
+					localStorage.setItem("visited", "true");
+				}, 1000);
+			}, 300);
+		}
+	</script>
+</body>
+</html>
